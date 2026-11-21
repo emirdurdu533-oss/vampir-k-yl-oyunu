@@ -1,0 +1,381 @@
+{
+  "users": [
+    {
+      "id": "seed-geceavcisi",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@geceavcisi#1042",
+      "displayName": "Gece Avcısı",
+      "avatarId": "hunter",
+      "isGuest": false,
+      "level": 7,
+      "xp": 640,
+      "stats": {
+        "gamesPlayed": 24,
+        "gamesWon": 15,
+        "vampireWins": 6,
+        "villagerWins": 8,
+        "jesterWins": 1
+      },
+      "createdAt": 1700000000000
+    },
+    {
+      "id": "seed-kuzgun",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgun#4819",
+      "displayName": "Kuzgun",
+      "avatarId": "raven",
+      "isGuest": false,
+      "level": 5,
+      "xp": 430,
+      "stats": {
+        "gamesPlayed": 18,
+        "gamesWon": 10,
+        "vampireWins": 5,
+        "villagerWins": 5,
+        "jesterWins": 0
+      },
+      "createdAt": 1700000000001
+    },
+    {
+      "id": "seed-hekim",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@hekim#7721",
+      "displayName": "Şifacı Leyla",
+      "avatarId": "healer",
+      "isGuest": false,
+      "level": 9,
+      "xp": 890,
+      "stats": {
+        "gamesPlayed": 31,
+        "gamesWon": 21,
+        "vampireWins": 4,
+        "villagerWins": 16,
+        "jesterWins": 1
+      },
+      "createdAt": 1700000000002
+    },
+    {
+      "id": "seed-ayisigi",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@ayisigi#3309",
+      "displayName": "Ayışığı Kontu",
+      "avatarId": "count",
+      "isGuest": false,
+      "level": 6,
+      "xp": 520,
+      "stats": {
+        "gamesPlayed": 20,
+        "gamesWon": 11,
+        "vampireWins": 7,
+        "villagerWins": 4,
+        "jesterWins": 0
+      },
+      "createdAt": 1700000000003
+    },
+    {
+      "id": "gst_3b85644a-1470-4926-a000-2a1a5af5ee2c",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kontemir#1395",
+      "displayName": "Kont Emir",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279799332
+    },
+    {
+      "id": "gst_9509c939-1874-44db-84e8-4a32bc4fc5d2",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#9568",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279815887
+    },
+    {
+      "id": "gst_0ee90415-d241-4fab-b2fd-a1b0e5ea693b",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#2923",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279881178
+    },
+    {
+      "id": "gst_847b3843-be9b-427c-b4c5-c5a52b71231c",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#2804",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279911279
+    },
+    {
+      "id": "gst_61f46365-cd2c-4a67-b0bb-ab73c4ad8e18",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl1#2357",
+      "displayName": "Köylü 1",
+      "avatarId": "watcher",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279915646
+    },
+    {
+      "id": "gst_ed84c099-251f-4911-a194-32aec5c6308f",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl2#9088",
+      "displayName": "Köylü 2",
+      "avatarId": "watcher",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279915693
+    },
+    {
+      "id": "gst_4ecf141a-a7bd-4b56-9c04-e053b341f0c0",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl3#9645",
+      "displayName": "Köylü 3",
+      "avatarId": "watcher",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279915717
+    },
+    {
+      "id": "gst_ebe84766-46a8-4801-86b8-e696a45e1315",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl4#7861",
+      "displayName": "Köylü 4",
+      "avatarId": "watcher",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279915740
+    },
+    {
+      "id": "gst_d8a2602e-41e3-4a23-9b68-bb06a8138bed",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl5#4516",
+      "displayName": "Köylü 5",
+      "avatarId": "watcher",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279915772
+    },
+    {
+      "id": "gst_5b2c6e6a-206b-4610-9d30-51c614d93b8a",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#7662",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279974583
+    },
+    {
+      "id": "gst_cf540b4b-7fe3-416d-8dc7-da666c7079f4",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl1#2866",
+      "displayName": "Köylü 1",
+      "avatarId": "healer",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279978816
+    },
+    {
+      "id": "gst_2cb35625-5c83-4461-bca1-afdcad5bd52c",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl2#5876",
+      "displayName": "Köylü 2",
+      "avatarId": "healer",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279978848
+    },
+    {
+      "id": "gst_ede54ece-2095-42ed-929a-59e260790fae",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl3#5042",
+      "displayName": "Köylü 3",
+      "avatarId": "healer",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279978869
+    },
+    {
+      "id": "gst_5f39edcd-de48-4c7a-be29-0dcd85017254",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl4#4589",
+      "displayName": "Köylü 4",
+      "avatarId": "healer",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279978890
+    },
+    {
+      "id": "gst_14fe1fc7-aae3-4e87-a655-9f881c6cdeff",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kyl5#3735",
+      "displayName": "Köylü 5",
+      "avatarId": "healer",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795279978913
+    }
+  ],
+  "friendships": [
+    {
+      "id": "fr_1795279820165_xxi544",
+      "fromUserId": "gst_9509c939-1874-44db-84e8-4a32bc4fc5d2",
+      "toUserId": "seed-geceavcisi",
+      "status": "pending",
+      "createdAt": 1795279820165
+    },
+    {
+      "id": "fr_1795279885609_6sc55c",
+      "fromUserId": "gst_0ee90415-d241-4fab-b2fd-a1b0e5ea693b",
+      "toUserId": "seed-geceavcisi",
+      "status": "pending",
+      "createdAt": 1795279885609
+    }
+  ]
+}

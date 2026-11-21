@@ -1,0 +1,6 @@
+{
+  "name": "Kanlı Köy — Vampir Köylü",
+  "description": "Gerçek zamanlı, çok oyunculu, arkadaşlık sistemli ve gotik temalı Vampir Köylü (Mafia / Werewolf) sosyal çıkarım oyunu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
