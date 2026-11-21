@@ -51,8 +51,8 @@ export function validateRoomSettings(
   if (!settings.name || settings.name.trim().length < 2 || settings.name.trim().length > 36) {
     return { valid: false, error: 'Oda adı 2 ile 36 karakter arasında olmalıdır.', villagerCount: 0 };
   }
-  if (!Number.isInteger(settings.capacity) || settings.capacity < 6 || settings.capacity > 16) {
-    return { valid: false, error: 'Oda kapasitesi 6 ile 16 kişi arasında olmalıdır.', villagerCount: 0 };
+  if (!Number.isInteger(settings.capacity) || settings.capacity < 4 || settings.capacity > 16) {
+    return { valid: false, error: 'Oda kapasitesi 4 ile 16 kişi arasında olmalıdır.', villagerCount: 0 };
   }
   if (settings.nightDuration < 15 || settings.nightDuration > 90) {
     return { valid: false, error: 'Gece süresi 15-90 saniye arası olmalıdır.', villagerCount: 0 };
@@ -73,7 +73,7 @@ export function validateRoomSettings(
   }
 
   const specialTotal = r.VAMPIRE + r.DOCTOR + r.DETECTIVE + r.HUNTER + r.JESTER;
-  const referenceCount = currentPlayerCount && currentPlayerCount >= 6 ? currentPlayerCount : settings.capacity;
+  const referenceCount = currentPlayerCount && currentPlayerCount >= 4 ? currentPlayerCount : settings.capacity;
 
   if (specialTotal >= referenceCount) {
     return {
@@ -105,7 +105,7 @@ export function assignRoles(
   const deck: Role[] = [];
   const { VAMPIRE, DOCTOR, DETECTIVE, HUNTER, JESTER } = settings.roles;
 
-  // Scale special roles safely if fewer than capacity joined (minimum 6 players)
+  // Scale special roles safely if fewer than capacity joined (minimum 4 players)
   const vampCount = Math.min(VAMPIRE, Math.max(1, Math.floor((n - 1) / 2)));
   for (let i = 0; i < vampCount; i++) deck.push('VAMPIRE');
 

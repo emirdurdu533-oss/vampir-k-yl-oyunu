@@ -68,7 +68,7 @@ export interface RoleDistribution {
 
 export interface RoomSettings {
   name: string;
-  capacity: number; // 6 - 16
+  capacity: number; // 4 - 16
   isPublic: boolean;
   hasPassword: boolean;
   nightDuration: number; // seconds

@@ -321,7 +321,7 @@ export class GameManager {
           const updated: RoomSettings = {
             ...room.settings,
             name: String(s.name || room.settings.name).trim().slice(0, 36),
-            capacity: Math.max(room.players.length, Math.min(16, Number(s.capacity) || 8)),
+            capacity: Math.max(4, Math.max(room.players.length, Math.min(16, Number(s.capacity) || 8))),
             isPublic: Boolean(s.isPublic),
             nightDuration: Number(s.nightDuration) || 30,
             dayDuration: Number(s.dayDuration) || 60,
@@ -358,14 +358,14 @@ export class GameManager {
         if (room.phase !== 'LOBBY') {
           return cb?.({ ok: false, error: 'Oyun zaten devam ediyor.' });
         }
-        if (room.players.length < 6) {
+        if (room.players.length < 4) {
           return cb?.({
             ok: false,
-            error: `Oyunu başlatmak için en az 6 oyuncu gerekli (şu an ${room.players.length}/6).`,
+            error: `Oyunu başlatmak için en az 4 oyuncu gerekli (şu an ${room.players.length}/4).`,
           });
         }
 
-        const validation = validateRoomSettings(room.settings, room.players.length);
+        const validation = validateRoomSettings(room.settings);
         if (!validation.valid) {
           return cb?.({ ok: false, error: validation.error });
         }

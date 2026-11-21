@@ -89,34 +89,64 @@ function makeRoom(roles: Role[]): ServerRoomState {
   };
 }
 
-test('validateRoomSettings enforces capacity 6-16 and vampire majority guard', () => {
-  const valid = validateRoomSettings(makeSettings({ capacity: 6 }));
-  assert.equal(valid.valid, true);
-  assert.equal(valid.villagerCount, 2);
+test('validateRoomSettings enforces capacity 4-16 and vampire majority guard', () => {
+  const valid6 = validateRoomSettings(makeSettings({ capacity: 6 }));
+  assert.equal(valid6.valid, true);
+  assert.equal(valid6.villagerCount, 2);
 
-  const tooSmall = validateRoomSettings(makeSettings({ capacity: 5 }));
+  const valid4 = validateRoomSettings(
+    makeSettings({
+      capacity: 4,
+      roles: { VAMPIRE: 1, DOCTOR: 1, DETECTIVE: 1, HUNTER: 0, JESTER: 0 },
+    })
+  );
+  assert.equal(valid4.valid, true);
+  assert.equal(valid4.villagerCount, 1);
+
+  const valid5 = validateRoomSettings(
+    makeSettings({
+      capacity: 5,
+      roles: { VAMPIRE: 1, DOCTOR: 1, DETECTIVE: 1, HUNTER: 1, JESTER: 0 },
+    })
+  );
+  assert.equal(valid5.valid, true);
+  assert.equal(valid5.villagerCount, 1);
+
+  const tooSmall = validateRoomSettings(makeSettings({ capacity: 3 }));
   assert.equal(tooSmall.valid, false);
 
   const tooManyVamps = validateRoomSettings(
     makeSettings({
-      capacity: 6,
-      roles: { VAMPIRE: 3, DOCTOR: 1, DETECTIVE: 0, HUNTER: 0, JESTER: 0 },
+      capacity: 4,
+      roles: { VAMPIRE: 2, DOCTOR: 1, DETECTIVE: 0, HUNTER: 0, JESTER: 0 },
     })
   );
   assert.equal(tooManyVamps.valid, false);
 });
 
-test('assignRoles distributes exact requested counts and fills remaining with VILLAGER', () => {
-  const playerIds = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6'];
-  const assigned = assignRoles(playerIds, makeSettings());
-  const counts = Object.values(assigned).reduce<Record<string, number>>((acc, role) => {
+test('assignRoles distributes exact requested counts and scales safely for 4-5 players', () => {
+  const playerIds6 = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6'];
+  const assigned6 = assignRoles(playerIds6, makeSettings());
+  const counts6 = Object.values(assigned6).reduce<Record<string, number>>((acc, role) => {
     acc[role] = (acc[role] ?? 0) + 1;
     return acc;
   }, {});
-  assert.equal(counts.VAMPIRE, 2);
-  assert.equal(counts.DOCTOR, 1);
-  assert.equal(counts.DETECTIVE, 1);
-  assert.equal(counts.VILLAGER, 2);
+  assert.equal(counts6.VAMPIRE, 2);
+  assert.equal(counts6.DOCTOR, 1);
+  assert.equal(counts6.DETECTIVE, 1);
+  assert.equal(counts6.VILLAGER, 2);
+
+  // Even if room settings had 2 vampires for 8 capacity, starting with 4 players scales to 1 vampire + >=1 villager
+  const assigned4 = assignRoles(['p1', 'p2', 'p3', 'p4'], makeSettings({ capacity: 8 }));
+  const counts4 = Object.values(assigned4).reduce<Record<string, number>>((acc, role) => {
+    acc[role] = (acc[role] ?? 0) + 1;
+    return acc;
+  }, {});
+  assert.equal(counts4.VAMPIRE, 1);
+  assert.ok((counts4.VILLAGER ?? 0) >= 1);
+
+  const assigned5 = assignRoles(['p1', 'p2', 'p3', 'p4', 'p5'], makeSettings({ capacity: 5 }));
+  assert.equal(Object.keys(assigned5).length, 5);
 });
 
 test('doctor saves target on night 1 and cannot protect same target on night 2', () => {

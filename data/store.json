@@ -360,6 +360,253 @@
         "jesterWins": 0
       },
       "createdAt": 1795279978913
+    },
+    {
+      "id": "gst_f2d49b15-f879-4bb8-8317-3daac6237626",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#3525",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 120,
+      "stats": {
+        "gamesPlayed": 1,
+        "gamesWon": 1,
+        "vampireWins": 0,
+        "villagerWins": 1,
+        "jesterWins": 0
+      },
+      "createdAt": 1795285923606
+    },
+    {
+      "id": "gst_3e69b512-85ba-444a-bc6b-e283e7313981",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@oyuncu1#6762",
+      "displayName": "Oyuncu 1",
+      "avatarId": "guard",
+      "isGuest": true,
+      "level": 1,
+      "xp": 40,
+      "stats": {
+        "gamesPlayed": 1,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795285929322
+    },
+    {
+      "id": "gst_51890983-166c-45ff-b8ba-e1a580479d64",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@oyuncu2#5670",
+      "displayName": "Oyuncu 2",
+      "avatarId": "guard",
+      "isGuest": true,
+      "level": 1,
+      "xp": 120,
+      "stats": {
+        "gamesPlayed": 1,
+        "gamesWon": 1,
+        "vampireWins": 0,
+        "villagerWins": 1,
+        "jesterWins": 0
+      },
+      "createdAt": 1795285929363
+    },
+    {
+      "id": "gst_9640590c-a136-476e-b4d8-974979e19247",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@oyuncu3#1239",
+      "displayName": "Oyuncu 3",
+      "avatarId": "guard",
+      "isGuest": true,
+      "level": 1,
+      "xp": 120,
+      "stats": {
+        "gamesPlayed": 1,
+        "gamesWon": 1,
+        "vampireWins": 0,
+        "villagerWins": 1,
+        "jesterWins": 0
+      },
+      "createdAt": 1795285929385
+    },
+    {
+      "id": "gst_7e61af18-d61e-4b01-b44b-170c04aa91b5",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#3042",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286012181
+    },
+    {
+      "id": "gst_1f66be82-b569-407f-b819-753773bf40db",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#5128",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286039019
+    },
+    {
+      "id": "gst_799099e5-04ac-436d-869d-9c2fc9fff8e2",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@aye#5408",
+      "displayName": "Ayşe",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286045605
+    },
+    {
+      "id": "gst_f5a35c56-ba44-4ba6-8307-1dcf31dae555",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@mehmet#8128",
+      "displayName": "Mehmet",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286045608
+    },
+    {
+      "id": "gst_92c02706-490d-4442-8d2a-3fdcd2acb470",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@zeynep#2836",
+      "displayName": "Zeynep",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286045622
+    },
+    {
+      "id": "gst_dbad1c44-308b-4ea3-bf55-8179601ddfbf",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@kuzgungezgin#8035",
+      "displayName": "Kuzgun Gezgin",
+      "avatarId": "raven",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286063466
+    },
+    {
+      "id": "gst_6be067fb-c65e-45eb-a4b7-87d0265d84d5",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@aye#6924",
+      "displayName": "Ayşe",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286070288
+    },
+    {
+      "id": "gst_ae4993d5-e803-44ec-826c-fffa971fbc20",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@mehmet#8750",
+      "displayName": "Mehmet",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286070291
+    },
+    {
+      "id": "gst_d824eb32-533b-4033-8770-b8a40d2f874e",
+      "email": null,
+      "passwordHash": null,
+      "tag": "@zeynep#2257",
+      "displayName": "Zeynep",
+      "avatarId": "count",
+      "isGuest": true,
+      "level": 1,
+      "xp": 0,
+      "stats": {
+        "gamesPlayed": 0,
+        "gamesWon": 0,
+        "vampireWins": 0,
+        "villagerWins": 0,
+        "jesterWins": 0
+      },
+      "createdAt": 1795286070293
     }
   ],
   "friendships": [

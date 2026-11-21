@@ -46,7 +46,7 @@ export function LobbyView({ onOpenFriends }: { onOpenFriends: () => void }) {
 
   const me = activeRoom.players.find((p) => p.userId === user.id);
   const isHost = Boolean(me?.isHost);
-  const readyToStart = activeRoom.players.length >= 6;
+  const readyToStart = activeRoom.players.length >= 4;
 
   const handleCopyCode = async () => {
     try {
@@ -180,12 +180,12 @@ export function LobbyView({ onOpenFriends }: { onOpenFriends: () => void }) {
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     <div>
                       <label htmlFor="lobby-cap" className="block text-[11px] text-slate-400 mb-1">
-                        Kapasite (6–16)
+                        Kapasite (4–16)
                       </label>
                       <input
                         id="lobby-cap"
                         type="number"
-                        min={Math.max(6, activeRoom.players.length)}
+                        min={Math.max(4, activeRoom.players.length)}
                         max={16}
                         value={draftSettings.capacity}
                         onChange={(e) =>
@@ -367,7 +367,7 @@ export function LobbyView({ onOpenFriends }: { onOpenFriends: () => void }) {
                     <span>
                       {readyToStart
                         ? 'Oyunu Başlat'
-                        : `Oyunu Başlat (${activeRoom.players.length}/6)`}
+                        : `Oyunu Başlat (${activeRoom.players.length}/4)`}
                     </span>
                   </button>
                 ) : (

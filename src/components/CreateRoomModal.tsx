@@ -80,6 +80,27 @@ export function CreateRoomModal({
     }
   };
 
+  const handleCapacityChange = (nextCap: number) => {
+    setCapacity(nextCap);
+    const maxVamp = Math.max(1, Math.floor((nextCap - 1) / 2));
+    const nextVamp = Math.min(vampires, maxVamp);
+    if (nextVamp !== vampires) setVampires(nextVamp);
+
+    let remaining = nextCap - 1 - nextVamp; // at least 1 Villager
+    const nextDoc = Math.min(doctors, remaining);
+    remaining -= nextDoc;
+    const nextDet = Math.min(detectives, remaining);
+    remaining -= nextDet;
+    const nextHunt = Math.min(hunters, remaining);
+    remaining -= nextHunt;
+    const nextJest = Math.min(jesters, remaining);
+
+    if (nextDoc !== doctors) setDoctors(nextDoc);
+    if (nextDet !== detectives) setDetectives(nextDet);
+    if (nextHunt !== hunters) setHunters(nextHunt);
+    if (nextJest !== jesters) setJesters(nextJest);
+  };
+
   const RoleStepper = ({
     label,
     value,
@@ -212,10 +233,10 @@ export function CreateRoomModal({
               <input
                 id="room-capacity"
                 type="range"
-                min={6}
+                min={4}
                 max={16}
                 value={capacity}
-                onChange={(e) => setCapacity(Number(e.target.value))}
+                onChange={(e) => handleCapacityChange(Number(e.target.value))}
                 className="w-full accent-red-600 h-10 cursor-pointer"
               />
             </div>

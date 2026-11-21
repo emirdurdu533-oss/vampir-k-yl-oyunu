@@ -74,11 +74,8 @@ export function RoleCardModal({
                   className="h-full w-full object-cover"
                 />
               ) : (
-                <div className="flex flex-col items-center justify-center gap-3 p-6 text-center bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.16),#070913)] h-full w-full">
-                  <RoleEmblemIcon role={role} size={72} />
-                  <span className="font-display text-lg font-bold text-amber-200">
-                    {meta.name}
-                  </span>
+                <div className="flex items-center justify-center pb-10 p-6 text-center bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.16),#070913)] h-full w-full">
+                  <RoleEmblemIcon role={role} size={84} />
                 </div>
               )}
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 text-center">

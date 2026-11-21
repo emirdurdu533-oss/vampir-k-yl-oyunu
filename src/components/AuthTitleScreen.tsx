@@ -119,7 +119,7 @@ export function AuthTitleScreen() {
 
             <p className="max-w-lg text-base leading-relaxed text-slate-300">
               Gündüzleri köy meydanında müttefiklerini seç ve yalanları yakala; geceleri ise
-              gölgelerin arasında hayatta kalmaya çalış. 6 ila 16 kişilik gerçek zamanlı masalarda
+              gölgelerin arasında hayatta kalmaya çalış. 4 ila 16 kişilik gerçek zamanlı masalarda
               vampirler, doktorlar, dedektifler ve avcılar karşı karşıya.
             </p>
 
@@ -127,7 +127,7 @@ export function AuthTitleScreen() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-sm text-slate-300">
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-amber-400 shrink-0" />
-                <span>6–16 Oyuncu</span>
+                <span>4–16 Oyuncu</span>
               </div>
               <span aria-hidden="true" className="text-slate-600">·</span>
               <div className="flex items-center gap-2">
